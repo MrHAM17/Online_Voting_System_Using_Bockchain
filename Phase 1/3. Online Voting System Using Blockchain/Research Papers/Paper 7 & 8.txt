@@ -1,0 +1,50 @@
+1) 
+Survey on Blockchain-Based Data Storage Security for Android Mobile Applications
+
+
+Hussam Saeed Musa, Moez Krichen, Adem Alpaslan Altun, Meryem Ammi
+
+Key Findings -
+Blockchain enhances security and reliability of mobile app data storage. 
+BSADS framework consists of six comprehensive layers. 
+Identified challenges include scalability, performance, and cost. 
+Proposed solutions include blockchain pruning and energy-efficient consensus algorithms. 
+Emphasized importance of lightweight nodes for mobile apps. 
+Highlighted research gaps in energy efficiency and usability. 
+Blockchain offers advantages over traditional encryption methods. 
+
+
+Limitations -
+Unsuccessful implementations in mobile voting projects. 
+Scalability issues in Ethereum Name Service (ENS). 
+Critical vulnerabilities in Parity Wallet affecting user trust. 
+DAO hack highlighting blockchain security vulnerabilities. 
+Blockchain bloat overwhelming mobile devices' capabilities. 
+Restricted throughput causing slower transaction times. 
+High costs of data storage on blockchain. 
+Privacy concerns due to blockchain transparency. 
+Resource-intensive smart contracts affecting cost-effectiveness. 
+Limited computational power impacting user experience. 
+Different consensus algorithms affecting scalability and performance. 
+
+
+
+2) 
+Measurements of Mobile Blockchain Execution Impact on Smartphone Battery
+
+
+Yulia Bardinova, Konstantin Zhidanov, Sergey Bezzateev, Mikhail Komarov,  Aleksandr Ometov
+
+Key Findings -
+PoW algorithms significantly increase battery discharge rates. 
+PoA algorithms have minimal impact on battery performance. 
+Battery temperature rises significantly with PoW usage. 
+Cellular connections worsen battery discharge compared to Wi-Fi. 
+Dataset provides insights for blockchain impact on smartphone batteries.  
+
+
+Limitations -
+PoW algorithms negatively impact smartphone battery life. 
+Limited computational capabilities of smartphones compared to PCs. 
+Lack of existing measurements for resource-constrained devices. 
+PoW execution affects user experience negatively. 

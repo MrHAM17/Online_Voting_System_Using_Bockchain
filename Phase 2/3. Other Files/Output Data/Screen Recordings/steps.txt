@@ -1,0 +1,71 @@
+1
+citizen - register & past election view
+
+---------------
+2
+admin - election create
+admin - start s1
+
+-----------------
+3 - 2:17
+citizen  - no election
+candidate - no parties
+party head - apply
+
+
+-----------------
+4 - 3:45
+admin - cannot verify parties
+admin - stop s1
+admin - verify parties
+citizen - no election
+party head - cannot apply
+candidate - no parties
+
+
+---------------
+5 - 3:57
+admin - start s2
+admin - cannot verify party
+citizen - no election
+party head - no candidate applications
+candidate - apply for parties
+
+
+---------------
+6 - 5:36
+admin - stop s2
+citizen - no election
+candidate - cannot apply
+party head - will verify candidate..
+
+
+---------------
+7.1 - 4:50
+admin - start election
+candidate - cannot apply
+party head - cannot verify
+citizen - will vote
+
+7.2 - 1:50
+citizen - cast vote - with ifs & profile..
+
+7.3 - 0:50
+citizen - cast vote again & profile..
+
+
+---------------
+8 -
+admin - sync votes
+admin - stop election
+admin - view result
+
+-------------------
+9 - 
+citizen - view result
+candidate - view result
+party head - view - result..
+guest - view result..
+
+
+

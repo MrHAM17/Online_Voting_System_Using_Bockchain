@@ -1,0 +1,521 @@
+Online Voting System Using Blockchain:
+Name of app "Vote Chain"
+
+Note: Below is CONTEXT THEN I WILL ASK CODE FOR CITIZEN HOME SCREEN.
+
+CONTEXT ----->
+1) 
+I only want transparent voting function through contract other than this task, i want to do all tasks via without contract (using flutter logic with firebase db) so the cost to conduct the elections via blockchain will reduce. By using the app there might be admin (representing different states or governance bodies) can create elections simultaneously in state level ellections so keep in mind that as well. So keep contract for tha only voting count by recording votes on blockchain.
+
+2)
+As i want android-flutter, firebase, QuickNode for endpoint.
+Give me perfect best complete & detailed code of UI & Logic with appropriate usage & combination of views
+
+3)
+I am focused on android-flutter mobile appp for user(voter, candidate, election bodies, officiers,...)
+Main work that is to voting operations on blockchain network.
+Our solidity smart language contract is hosted to free testnet sepolia via QuickNode.
+And App backend will connect with blockchain testnet network & will act as agent/middleware between app & blockchain testnet  network.
+
+4)
+Input will be taken by user from UI of app or app & it will pass to backend & then operations will perform. And at the same time some data, meta data, operations records- results will be logged or maintain in another database (firebase).
+I am using firebase to handle the above stuff because if we did it via blockchain then load will be there & cost will extremely increased, so therefore another database is using here to handle another stuff & rest of main work to record vote & obtain result from blockchain network iteself.
+
+5)
+Multiple screens with perfect professional shapes for all icons, images, buttons, colorshemes, descent animation , theme ,...
+Complete hierarchy for to show candidates within area, region, taluka, jilha, state, country in a best appropriate way using ui components & stratergies or ways.
+All types of ellections should be there like gram panchayt, lok sabgha, vidhan sabha,...
+Perfect distribution of view of entire process...
+Main thing that is security & privacy.
+No person should be able to vote more than once & to the other state-elections in case for state elections. Person should vote to its allocated constituency only in respective cases.
+Store, respective user voted or not in database in appropriate manner like checkbox or yes/no
+So can be crosscheck from user & developers side by entering respective user id only to know he/she voted or not & note that no other data should be shown in that interface...
+like this other functionallity to make it app full perfect & best.
+
+6)
+Also what is input & how to interact it.
+same for output functionality.
+For my major project for computer engineering i.e, Online Voting System Using Blockchain, I want to build a android app. In that i want to put best & perfect classification of all elections, parties, candidates, voters, regions, & so. 
+Also i want to show the output/ results in various formats like a simple list (who won, no. of votes, & so..,) Same in graphical format in various ways, & so.. 
+Also i want to keep some other secondary functionalities along with primary one that is voting. All votes will be stored in blockchain. 
+Secondary database i.e., firebase  will be used to store other metadata,  profiles of all, other information, & so.. 
+So i want to keep less load on actual blockchain so speed of all transactions will be increased because India is at top in population so such huge amount of voters are here.. 
+Also i want to keep multifactor authentication in the app for voting purpose only. All activities & suspecious things will be analysed through the backend. 
+I want to cover all edge cases so that this app will be used in actual real life for election in india & outside as well, it will very proud thing. 
+
+7)
+And one of main thing is all exisiting process of elections required lakhs of man power from lower to higher authorities, tremendous efforts, wastage of time, extreme cost, lots of machinaries & alot; these all things can be simply replaced by the single mobile app. 
+So due to this lots of money will be saved and it will be used for mankind, all lower to higher level person's time will be saved so they can do their work,jobs,duties, & so.. metals & all other things will be saved beca use no need will be there to make machinaries for evm machines & others. 
+Also the process of all elections will be short but remained same & will do a very positive & powerful impact on our nation, people, sytems, ecosystems, & what not. 
+
+8.1)
+Also after the election & their results will be cleared or destroyed after keep all logs & conclusion & records/ information like how much vote, how much er region , per pary, per candidate, & alot ; the actual stored vote stored on blockchain can be deleted/destroyed because  it will not useful by anychance in future or afterwards. So due to this we will get storage again & it can be used  like same way in afterwards for future ellections. 
+Also by storing all vote on blockchain can be risky because aby any chance  if any one get access or data. 
+Such kind of app i want to build. All can citizens but not present at the time of election in their region & are out of station can vote even here via my app.
+
+8.2)
+what i think is:
+in types of parties their are 5-7 types
+these candidates changes thier parties as per the situations/money/ election type or level or ... 
+same applicable for every year/election/..
+So this app focus on giving the results , reports/diagrams based on parties & their candidates & constituencies.
+so if i store like code given above it willl be useless as evert time/electionn it will not vallid.
+So i have an new approach -->
+as party & their candidates are basic part  so -->
+1st i will store elections year wise as mentiond above firebase structure.
+
+& for this as candidates have to build parties/join parties they will apply for every election
+& admin will collect their responce in his dashboard , confiremed it & finally for respective ellection  will add tha party, candidate in firebase db mannually in above path manner.
+Same for normal election admin who are the Election commision heads of states or national level respectivelybecause they also get change evry time : so main head like developer of this app for permanatly work as to add main head (like ECI head) & then that main head will manage all rest of things , parts of all every election
+SO THEN i will create a simply record all requests which i will store all reuests of applications by candidates , for parties, for admins 
+
+9)
+Firebase structure i want like:
+9.1) for citizens --> Vote Chain/State/state name/Citizen/
+9.2.1) for admin  --> Vote Chain/Admin/state name/admin emai id ( as id)/Profile/Details/ all info stored as fields
+9.2.2) for candidate--> Vote Chain/Candidate/state name/candidateemai id ( as id)/Profile/Details/ all info stored as fields
+9.2.3) for party head & party data--> Vote Chain/Party/state name/party name ( as id)/Party Info/Details/ all info stored as fields
+
+9.3.1) for all elections under state --> 
+9.3.1.1) Vote Chain/State/state name/Election/Year/election name/
+9.3.1.2.1) Vote Chain/State/state name/Election/Year/election name/Admin/Application/Admin email id (as a id)/admin basic details...
+9.3.1.2.2) Vote Chain/State/state name/Election/Year/election name/Admin/Selected/Admin email id (as a id)/admin basic details... & details about conducted election
+
+9.3.1.3.1) Vote Chain/State/state name/Election/Year/election name/Party_Candidate/party name (as a id)/ field: "isPartyAllowed": Yes or No
+9.3.1.3.2) Vote Chain/State/state name/Election/Year/election name/Party_Candidate/party name (as a id)/Constituency id/Applications/Candidate email id/ [candidate basic details... other details] the part in bracket is store as fields not as doc or collection.
+9.3.1.3.3) Vote Chain/State/state name/Election/Year/election name/Party_Candidate/party name (as a id)/Constituency id/Applications as collection or doc + Field: "selectedCandidate": null (later party head will select the candidate for respective constituency then update here as value i.e., that selected candidate email id.)
+9.3.1.3.4) Vote Chain/State/state name/Election/Year/election name/Party_Candidate/party name (as a id)/"Selected Candidates Over All Constituency"/candidate email id (as a id)/ Fields: 
+"appliedConstituency": ["Constituency_id", "Constituency_id", ...],
+"selectedConstituency": ["Constituency_id", "Constituency_id", ...],
+"confirmedConstituency": ["Constituency_id", "Constituency_id", ...]
+ (later party head will select the candidate for respective constituency then add that constituency here as well. 
+Note : As per Indian LAW 
+--> candidate only contest election from any one chossed official party.
+--> candidate can apply multiple constituency but only contest election from any 2 constituency only maximum & minimum is 1 under one party only..
+So if candidate applied for multiple constituency its fine., party head will accept candidaes for constituency can selects the candidates no matter that candidate has been selected for multiple constituency. But If when a values stored in db for applied constituency is more than 1 & 2 & so... then notification goes to candidate i.e., You has applied for 'applied_constituency_count' constituency along with constituency name & Party has selected you for 'selected_constituency_count' along with constituency name. So as per law you can min contest from 1 & max contest from 2 constituency. So confirm the constituency that you want contest. And then the confirmed constituency will be notified to party head & will be update in firebase under confirmed_constituency. So party head can select new candidate if any constituency has no candidate because of assigning multiple constituency to one candidate.. , or incase of that candidate has not confirmed any thing inder the time...)
+
+9.3.1.4) Vote Chain/State/state name/Election/Year/election name/Result/constituency id/respective_party_candidate email id / Fields: "vote count": for respective candidate of respective party
+9.3.1.5) Vote Chain/State/state name/Election/Year/election name/Result/constituency  id/Meta data/ Fields: "male_vote_count", "female_vote_count", "number_of_new_voter_count", "isEmployeed", "isProfessionType", "votingTime: Record the time of day voters are most active (morning++, afternoon++, evening++).", "Location-Specific: [Urban++, rural++]", "Disability:  Count of voters with disabilities to improve accessibility efforts.", & so... & this same fields will be in ..Citizen/citizen email id/ here, so when respective citizen is voting for respective constituency --> we can check this fields as attributes like its mail or female or so.. & we can update the main fields in .../Meta data/ here we will update the respective fileds. Also we can store & update some fields in .../Citizen/citizen email id/ here like total_vote_count_for_respective_election_type, overall_total_times_voted, & so... 
+9.3.2 under the election name like .../Meta data/ : store all records like [total candidates, their oppenent partie's candidate, candidates without parties , total votes to all  respective candidates,  & all... (which can be use for record generation...)]
+
+9.4.1) for all national level ellection--> same like 9.3.1 to 9.3.2) elections under state
+but with little change in base path ie.,
+instead of "Vote Chain/State/state name/Election/ .."
+keep this "Vote Chain/Election/.. all same like state"
+
+CONTEXT ENDED -->
+
+NOW I WANT PARTY & PARTY HEAD SCREEN -->
+- party head should check applications for his party only 
+- party head can check the applications by applying filter (election type, year, state, constituency & then use this all 4 filter in firebase structure described in context.)
+- if applications are there in db for respective filters then show it 
+- party head can accept or reject the applicants & finalize the only 1 candidate per constituency & should update in firebase structure described in context.
+- party head can apply for respective election by setting filter (election type, state, year) (use same code of FAB with list ehich are hardcoded in AppConstants)
+- while applying for election take a info form (later on will take doc files & all, for now just typed info)
+- After applying for election set the message on screen that somehting like ECI officers will verify your party with provided details...
+- In party profile screen show the party details , members , ... in appropriate way by fetching from db
+- Note: For most of above things some code is there & which is incomplete & given below.
+
+<<So do code for all screens detailed in best way & complete it like professional way & then only give me all Give  seprate files for  screens.
+>>
+
+Here below is basic code i started. Modify , add to do all above fuctionallity (described in context) & complete it in best professional way.
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////            //////////////////////////////////////////////////////////////            //////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Online Voting System Using Blockchain:
+Name of app "Vote Chain"
+
+Note: Below is CONTEXT THEN I WILL ASK CODE FOR CITIZEN HOME SCREEN.
+
+CONTEXT ----->
+1) 
+I only want transparent voting function through contract other than this task, i want to do all tasks via without contract (using flutter logic with firebase db) so the cost to conduct the elections via blockchain will reduce. By using the app there might be admin (representing different states or governance bodies) can create elections simultaneously in state level ellections so keep in mind that as well. So keep contract for tha only voting count by recording votes on blockchain.
+
+2)
+As i want android-flutter, firebase, QuickNode for endpoint.
+Give me perfect best complete & detailed code of UI & Logic with appropriate usage & combination of views
+
+3)
+I am focused on android-flutter mobile appp for user(voter, candidate, election bodies, officiers,...)
+Main work that is to voting operations on blockchain network.
+Our solidity smart language contract is hosted to free testnet sepolia via QuickNode.
+And App backend will connect with blockchain testnet network & will act as agent/middleware between app & blockchain testnet  network.
+
+4)
+Input will be taken by user from UI of app or app & it will pass to backend & then operations will perform. And at the same time some data, meta data, operations records- results will be logged or maintain in another database (firebase).
+I am using firebase to handle the above stuff because if we did it via blockchain then load will be there & cost will extremely increased, so therefore another database is using here to handle another stuff & rest of main work to record vote & obtain result from blockchain network iteself.
+
+5)
+Multiple screens with perfect professional shapes for all icons, images, buttons, colorshemes, descent animation , theme ,...
+Complete hierarchy for to show candidates within area, region, taluka, jilha, state, country in a best appropriate way using ui components & stratergies or ways.
+All types of ellections should be there like gram panchayt, lok sabgha, vidhan sabha,...
+Perfect distribution of view of entire process...
+Main thing that is security & privacy.
+No person should be able to vote more than once & to the other state-elections in case for state elections. Person should vote to its allocated constituency only in respective cases.
+Store, respective user voted or not in database in appropriate manner like checkbox or yes/no
+So can be crosscheck from user & developers side by entering respective user id only to know he/she voted or not & note that no other data should be shown in that interface...
+like this other functionallity to make it app full perfect & best.
+
+6)
+Also what is input & how to interact it.
+same for output functionality.
+For my major project for computer engineering i.e, Online Voting System Using Blockchain, I want to build a android app. In that i want to put best & perfect classification of all elections, parties, candidates, voters, regions, & so. 
+Also i want to show the output/ results in various formats like a simple list (who won, no. of votes, & so..,) Same in graphical format in various ways, & so.. 
+Also i want to keep some other secondary functionalities along with primary one that is voting. All votes will be stored in blockchain. 
+Secondary database i.e., firebase  will be used to store other metadata,  profiles of all, other information, & so.. 
+So i want to keep less load on actual blockchain so speed of all transactions will be increased because India is at top in population so such huge amount of voters are here.. 
+Also i want to keep multifactor authentication in the app for voting purpose only. All activities & suspecious things will be analysed through the backend. 
+I want to cover all edge cases so that this app will be used in actual real life for election in india & outside as well, it will very proud thing. 
+
+7)
+And one of main thing is all exisiting process of elections required lakhs of man power from lower to higher authorities, tremendous efforts, wastage of time, extreme cost, lots of machinaries & alot; these all things can be simply replaced by the single mobile app. 
+So due to this lots of money will be saved and it will be used for mankind, all lower to higher level person's time will be saved so they can do their work,jobs,duties, & so.. metals & all other things will be saved beca use no need will be there to make machinaries for evm machines & others. 
+Also the process of all elections will be short but remained same & will do a very positive & powerful impact on our nation, people, sytems, ecosystems, & what not. 
+
+8)
+Also after the election & their results will be cleared or destroyed after keep all logs & conclusion & records/ information like how much vote, how much er region , per pary, per candidate, & alot ; the actual stored vote stored on blockchain can be deleted/destroyed because  it will not useful by anychance in future or afterwards. So due to this we will get storage again & it can be used  like same way in afterwards for future ellections. 
+Also by storing all vote on blockchain can be risky because aby any chance  if any one get access or data. 
+Such kind of app i want to build. All can citizens but not present at the time of election in their region & are out of station can vote even here via my app.
+
+9)
+Firebase structure i want like:
+9.1) for citizens --> Vote Chain/State/state name/Citizen/
+9.2.1) for admin  --> Vote Chain/Admin/state name/admin emai id ( as doc )/Profile/Details/ all info stored as fields
+9.2.2) for candidate--> Vote Chain/Candidate/state name/candidateemai id ( as doc )/Profile/Details/ all info stored as fields
+9.2.3) for party head & party data--> Vote Chain/Party/state name/party name ( as doc )/Party Info/Details/ all info stored as fields
+9.3.1) for all elections under state --> 
+9.3.1.1) Vote Chain/State/state name/Election/Year/election name/
+9.3.1.2) Vote Chain/State/state name/Election/Year/election name/Admin/ admin basic details...
+9.3.1.3) Vote Chain/State/state name/Election/Year/election name/Party/party name/candidate email id/ [candidate basic details... + details like for which constituency this candidate is there so consstituency name, number, other details] the part in bracket is store as fields not as doc or collection.
+9.3.1.4) Vote Chain/State/state name/Election/Year/election name/Result/candidate email id /consttuency number or name as id/party's candidate email id/ [vote count for respective candidate of respective party + basic details... if any] the part in bracket is store as fields not as doc or collection.
+9.3.1.5) Vote Chain/State/state name/Election/Year/election name/Result/candidate email id /consttuency number or name as id/Meta data/ [male_vote_count, female_vote_count, number_of_new_voter_count] the part in bracket is store as fields not as doc or collection & this same fields will be in ..Citizen/citizen email id/ here, so when respective citizen is voting --> we can check this fields as attributes like its mail or female or so.. & we can update the main fields in .../Meta data/ here we will update the respective fileds. Also we can store & update some fields in .../Citizen/citizen email id/ here like total_vote_count_for_respective_election_type, overall_total_times_voted, & so... 
+9.3.2 under the election name like .../Meta data/ : store all records like [total candidates, their parties, candidates without parties , total votes to all  respective candidates,  & all... (which can be use for record generation...)]
+
+9.4.1) for all national level ellection--> same like 9.3.1) elections under state
+but with little change in base path ie.,
+instead of "Vote Chain/State/state name/Election/ .."
+keep this "Vote Chain/Election/.. all same like state"
+9.5 Note : Fixed collection nams are --> "Vote Chain", "State", "Election", "Year" , "Admin" , "Party", "Result" & other names will be dynamic...
+
+10)
+what i think is:
+in types of parties their are 5-7 types
+these candidates changes thier parties as per the situations/money/ election type or level or ... 
+same applicable for every year/election/..
+So this app focus on giving the results , reports/diagrams based on parties & their candidates & constituencies.
+so if i store like code given above it willl be useless as evert time/electionn it will not vallid.
+So i have an new approach -->
+as party & their candidates are basic part  so -->
+1st i will store elections year wise as mentiond above firebase structure.
+
+& for this as candidates have to build parties/join parties they will apply for every election
+& admin will collect their responce in his dashboard , confiremed it & finally for respective ellection  will add tha party, candidate in firebase db mannually in above path manner.
+Same for normal election admin who are the Election commision heads of states or national level respectivelybecause they also get change evry time : so main head like developer of this app for permanatly work as to add main head (like ECI head) & then that main head will manage all rest of things , parts of all every election
+SO THEN i will create a simply requests folder in which i will store all reuests of applications by candidates , for parties, for admins 
+for applications to state level ellections -->
+Vote Chain/State/state name/Election/Requests/Candidate/ ..
+Vote Chain/State/state name/Election/Requests/Party/ ..
+Vote Chain/State/state name/Election/Requests/Admin/ ..
+
+for applications to National level ellections --> 
+Vote Chain/Election/Requests/Candidate/ ..
+Vote Chain/Election/Requests/Party/ ..
+Vote Chain/Election/Requests/Admin/ ..
+
+so by doing so state level admins can complete all requests & Main ECI head will add/delete state level admins & permanent developer or i will i add/delete Main ECI head or admin
+
+CONTEXT ENDED -->
+
+NOW I WANT CITIZEN HOME SCREEN -->
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////            //////////////////////////////////////////////////////////////            //////////////////////////////////////////////////////////////
+
+
+
+
+
+Online Voting System Using Blockchain:
+Name of app "Vote Chain"
+
+Note -->
+1) 
+I only want immutable voting function through contract other than this task, i want to do all tasks via without contract (using flutter logic with firebase db) so the cost to conduct the elections via blockchain will reduce.
+
+2)
+As i want android-flutter, firebase, QuickNode for endpoint.
+Give me perfect best complete & detailed code of UI & Logic with appropriate usage & combination of views
+
+3)
+I am focused on android-flutter mobile appp for user(voter, candidate, election bodies, officiers,...)
+Main work that is to voting operations on blockchain network.
+Our solidity smart language contract is hosted to free testnet sepolia via QuickNode.
+And App backend will connect with blockchain testnet network & will act as agent/middleware between app & blockchain testnet  network.
+
+4)
+Input will be taken by user from UI of app or app & it will pass to backend & then operations will perform. And at the same time some data, meta data, operations records- results will be logged or maintain in another database (firebase).
+I am using firebase to handle the above stuff because if we did it via blockchain then load will be there & cost will extremely increased, so therefore another database is using here to handle another stuff & rest of main work to record vote & obtain result from blockchain network iteself.
+
+5)
+Multiple screens with perfect professional shapes for all icons, images, buttons, colorshemes, descent animation , theme ,...
+Complete hierarchy for to show candidates within area, region, taluka, jilha, state, country in a best appropriate way using ui components & stratergies or ways.
+All types of ellections should be there like gram panchayt, lok sabgha, vidhan sabha,...
+Perfect distribution of view of entire process...
+Main thing that is security & privacy.
+No person should be able to vote more than once & to the other state-elections in case for state elections. Person should vote to its allocated constituency only in respective cases.
+Store, respective user voted or not in database in appropriate manner like checkbox or yes/no
+So can be crosscheck from user & developers side by entering respective user id only to know he/she voted or not & note that no other data should be shown in that interface...
+like this other functionallity to make it app full perfect & best.
+
+6)
+Also what is input & how to interact it.
+same for output functionality.
+For my major project for computer engineering i.e, Online Voting System Using Blockchain, I want to build a android app. In that i want to put best & perfect classification of all elections, parties, candidates, voters, regions, & so. 
+Also i want to show the output/ results in various formats like a simple list (who won, no. of votes, & so..,) Same in graphical format in various ways, & so.. 
+Also i want to keep some other secondary functionalities along with primary one that is voting. All votes will be stored in blockchain. 
+Secondary database i.e., firebase  will be used to store other metadata,  profiles of all, other information, & so.. 
+So i want to keep less load on actual blockchain so speed of all transactions will be increased because India is at top in population so such huge amount of voters are here.. 
+Also i want to keep multifactor authentication in the app for voting purpose only. All activities & suspecious things will be analysed through the backend. 
+I want to cover all edge cases so that this app will be used in actual real life for election in india & outside as well, it will very proud thing. 
+
+7)
+And one of main thing is all exisiting process of elections required lakhs of man power from lower to higher authorities, tremendous efforts, wastage of time, extreme cost, lots of machinaries & alot; these all things can be simply replaced by the single mobile app. 
+So due to this lots of money will be saved and it will be used for mankind, all lower to higher level person's time will be saved so they can do their work,jobs,duties, & so.. metals & all other things will be saved beca use no need will be there to make machinaries for evm machines & others. 
+Also the process of all elections will be short but remained same & will do a very positive & powerful impact on our nation, people, sytems, ecosystems, & what not. 
+
+8)
+Also after the election & their results will be cleared or destroyed after keep all logs & conclusion & records/ information like how much vote, how much er region , per pary, per candidate, & alot ; the actual stored vote stored on blockchain can be deleted/destroyed because  it will not useful by anychance in future or afterwards. So due to this we will get storage again & it can be used  like same way in afterwards for future ellections. 
+Also by storing all vote on blockchain can be risky because aby any chance  if any one get access or data. 
+Such kind of app i want to build. All can citizens but not present at the time of election in their region & are out of station can vote even here via my app.
+
+9)
+Firebase structure i want like:
+9.1 for citizens --> Vote Chain/State/state name/Citizen/
+9.2 for admin  --> Vote Chain/State/state name/Admin/
+9.3.1 for all elections under state --> Vote Chain/State/state name/Election/Year/election name/
+9.3.2 under the election name : store all records like [total candidates, their parties, candidates without parties , total votes to all candidates,  & all... (which can be use for record generation...)]
+9.4.1 for all national level ellection--> Vote Chain/Election/Year/election name/
+9.4.2 under the election name : store all records like [total candidates, their parties, candidates without parties , total votes to all candidates,  & all... (which can be use for record generation...)]
+9.5 Note : Fixed collection nams are --> "Vote Chain", "State", "Election", "Year" & other names will be dynamic...
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////            //////////////////////////////////////////////////////////////            //////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+Online Voting System Using Blockchain:
+Name of app "Vote Chain"
+
+I am focused on android-flutter mobile appp for user(voter, candidate, election bodies, officiers,...)
+Main work that is to voting operations on blockchain network.
+Our solidity smart language contract will be connected to local (Granche or Truffle).
+And App backend will connect & will use that local support like Granche or Truffle to connect with blockchain network & will act as agent/middleware between app & blockchain network.
+Input will be taken by user from UI of app or app & it will pass to backend & then operations will perform.
+And at the same time some data, meta data, operations records- results will be logged or maintain in another database (mostly firebase).
+We are using firebase to handle the above stuff because if we did it via blockchain then load will be there & cost will extremely increased, so therefore another database is using here to handle another stuff &rest of main work to record vote & obtain result from blockchain network iteself.
+Multiple screens with perfect professional shapes for all icons, images, buttons, colorshemes, descent animation , theme ,...
+Complete hierarchy for to show candidates within area, region, taluka, jilha, state, country in a best appropriate way using ui components & stratergies or ways.
+All types of ellections should be there like gram panchayt, lok sabgha, vidhan sabha,...
+Perfect distribution of view of entire process...
+Main thing that is security & privacy.
+No person should be able to vote more than once & to the other state-elections in case for state elections.
+Store, respective user voted or not in database in appropriate manner like checkbox or yes/no
+So can be crosscheck from user & developers side by entering respective user id only to know he/she voted or not & note that no other data should be shown in that interface...
+like this other functionallity to make it app full perfect & best.
+Also what is input & how to interact it.
+same for output functionality.
+For my major project for computer engineering i.e, Online Voting System Using Blockchain, I want to build a android app. In that i want to put best & perfect classification of all elections, parties, candidates, voters, regions, & so. 
+Also i want to show the output/ results in various formats like a simple list (who won, no. of votes, & so..,) Same in graphical format in various ways, & so.. 
+Also i want to keep some other secondary functionalities along with primary one that is voting. All votes will be stored in blockchain. 
+Secondary database i.e., firebase  will be used to store other metadata,  profiles of all, other information, & so.. 
+So i want to keep less load on actual blockchain so speed of all transactions will be increased because India is at top in population so such huge amount of voters are here.. 
+Also i want to keep multifactor authentication in the app for voting purpose only. All activities & suspecious things will be analysed through the backend. 
+I want to cover all edge cases so that this app will be used in actual real life for election in india & outside as well, it will very proud thing. 
+And one of main thing is all exisiting process of elections required lakhs of man power from lower to higher authorities, tremendous efforts, wastage of time, extreme cost, lots of machinaries & alot; these all things can be simply replaced by the single mobile app. 
+So due to this lots of money will be saved and it will be used for mankind, all lower to higher level person's time will be saved so they can do their work,jobs,duties, & so.. metals & all other things will be saved beca use no need will be there to make machinaries for evm machines & others. 
+Also the process of all elections will be short but remained same & will do a very positive & powerful impact on our nation, people, sytems, ecosystems, & what not. 
+Also after the election & their results will be cleared or destroyed after keep all logs & conclusion & records/ information like how much vote, how much er region , per pary, per candidate, & alot ; the actual stored vote stored on blockchain can be deleted/destroyed because  it will not useful by anychance in future or afterwards. So due to this we will get storage again & it can be used  like same way in afterwards for future ellections. 
+Also by storing all vote on blockchain can be risky because aby any chance  if any one get access or data. 
+Such kind of app i want to build. All can citizens but not present at the time of election in their region & are out of station can vote even here via my app
+
+
+
+
+"Create a comprehensive full stack project with source code for a blockchain-based voting system mobile application designed for a final-year computer engineering project. The architecture should focus on the integration between the mobile app, blockchain network, and a secondary database, ensuring security, scalability, and ease of use."
+
+<<First give end to end complete detailed file folder structure & then only give all complete detailed code only.>>
+
+The architecture should include:
+User Interface (UI):
+Built using Android Studio- Flutter to allow voters to register, authenticate, select elections, view candidates, cast votes, and view real-time results.
+
+Blockchain Network:
+Utilize Sepholia-Ethereum (free test net) to securely record votes as transactions.
+Implement smart contracts for managing the voting process, including vote validation, counting, and result declaration.
+Ensure that each vote is immutable and transparent, with no possibility of tampering.
+
+Smart Contracts:
+Develop smart contracts to handle the vote casting, counting, and storing election results on the blockchain.
+Include logic to ensure that each voter can only vote once, using a unique voter ID.
+Backend System:
+
+App Backend: Built with backend framework to facilitate communication between the mobile app and the blockchain.
+Use Web3.js and/or another blockchain interaction library to send transactions and interact with smart contracts.
+Handle API calls, data validation, and manage the logic for interacting with the blockchain and Firebase.
+
+Firebase Integration:
+
+Authentication: Implement Firebase Authentication for secure and scalable user registration and login.
+Firestore Database: Store non-sensitive data, such as user profiles, election metadata, and logs for auditing purposes. Ensure this data does not overlap with the critical vote data stored on the blockchain.
+
+Vote Verification and Recording:
+Securely transmit votes from the mobile app to the blockchain via the backend system.
+Use the blockchain to verify that votes are unique and valid, ensuring that no user can vote more than once.
+
+Result Display and Retrieval:
+The mobile app retrieves and displays real-time election results, calculated directly from the blockchain.
+Include mechanisms to display voter participation status (whether they have voted) without revealing sensitive information.
+Security and Privacy Measures:
+
+Implement end-to-end encryption for all data transmissions between the app, backend, and blockchain.
+Ensure voter anonymity and data privacy by isolating sensitive data on the blockchain, with Firebase handling non-sensitive data.
+Include audit logs that can be verified by election officials without compromising voter privacy.
+
+Scalability and Performance:
+Ensure the architecture is scalable to handle a large number of users, especially during peak voting times.
+Design the system to be fault-tolerant, with redundancy and failover mechanisms for critical components."
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////            //////////////////////////////////////////////////////////////            //////////////////////////////////////////////////////////////
+
+
+
+but as u know i am storing the stage of election in firebase as well.
+and there is dynamic dashboard for to handle election means all admins will enter the election name, year,  state & password so then get entered & can perform the next tasks  to the tasks which they did last time as i am storing stage & disabling the buttons one by one. so means if admin start the election today by logging & as we can see the election is started & entry made in blockchain. And admin logged out. Now when admin logging tommorrow then lets say there is only stop election button enable , so admin will tap that, then call will be started in backed for that election to the blockchain & status will be stopped. Like this= simultaneously different - different admin can manage the different - different elections. 
+and i am storing the election's all record like {[year] [election type] [state] [any status or entry here] ...}  so this way all elections will be manage by different admins at the same time , right or wrong ??
+
+is this all right or wrong something ??
+
+
+//////////////////////////////////////////////////////////////            //////////////////////////////////////////////////////////////            //////////////////////////////////////////////////////////////
+
+party-constituency-voters per constituency
+334 or 434 or 343 or 443
+all type uses 12 votes. so which to choose for like real world type...  -->
+
+Let's compare all 4 configurations with the context of a real-world election and see which gives a better, more realistic representation of competition and voter dynamics.
+
+Configurations:
+334: 3 Parties, 3 Constituencies, 4 Voters per Constituency
+434: 4 Parties, 3 Constituencies, 4 Voters per Constituency
+343: 3 Parties, 4 Constituencies, 3 Voters per Constituency
+443: 4 Parties, 4 Constituencies, 3 Voters per Constituency
+
+Table: Comparison of Configurations
+Configuration	Total 	Votes 	Used	Parties	Constituencies	Voters per Constituency	Competitive Balance	Real-World Representation	                                   conclusion
+334		12	3	3	4	Low (easy for a party to win)					Not very realistic, too few parties and constituencies	           Not ideal
+434		12	4	3	4	Moderate (more parties but fewer constituencies)		Fairly realistic for smaller elections	                           Good option
+343		12	3	4	3	High (more constituencies, but fewer parties)			Closer to a real-world election (more constituencies)	           Ideal option
+443		12	4	4	3	High (more competition, more constituencies)			Most realistic for diverse competition and voter representation	   Best option
+
+
+Analysis:
+334 (3 parties, 3 constituencies, 4 voters per constituency):
+Pros: Simple, easy to manage, small number of constituencies.
+Cons: Very easy for a party to win, low competition. Not very realistic due to the small number of constituencies and parties.
+434 (4 parties, 3 constituencies, 4 voters per constituency):
+Pros: Adds more competition with more parties. Still fairly simple.
+Cons: Fewer constituencies, but better competition between parties. More balanced than 334.
+343 (3 parties, 4 constituencies, 3 voters per constituency):
+Pros: More constituencies, better competition, slightly more realistic for an election scenario.
+Cons: Fewer voters per constituency. Still fairly small. This strikes a good balance.
+443 (4 parties, 4 constituencies, 3 voters per constituency):
+Pros: Highest competition, most constituencies, better real-world representation.
+Cons: Slightly more complex, but still manageable within limits. Most realistic with enough competition and voter variety.
+Conclusion:
+Best for Realism: 443 (4 parties, 4 constituencies, 3 voters per constituency)
+
+This configuration gives the most balanced competition and better simulates real-world election dynamics with enough diverse voting regions and party competition.
+Next Best: 343 (3 parties, 4 constituencies, 3 voters per constituency)
+
+This is a good middle ground, with more constituencies but fewer voters per constituency.
+Good Option: 434 (4 parties, 3 constituencies, 4 voters per constituency)
+
+This configuration adds competition with 4 parties, but fewer constituencies.
+So, if you aim for real-world simulation while balancing complexity, 443 is the best choice. However, 343 is also a solid option if you want to keep it slightly simpler but still competitive.
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////            //////////////////////////////////////////////////////////////            //////////////////////////////////////////////////////////////
+
+
+
+Private Key & Address Derivation:
+• Your MetaMask private key is used to derive your public address.
+• The blockchain never sees your raw private key—only the derived address via the cryptographic signature.
+
+Signing Transactions:
+• When a transaction is signed using your private key, it creates a unique digital signature.
+• This signature proves that the transaction was authorized by the owner of the corresponding address.
+
+Sender Identification:
+• The blockchain verifies the signature and automatically identifies the sender by their public address.
+• This is similar to proving you own a Google account by correctly providing credentials (here, the signature acts as proof).
+
+Transaction Fees (Gas):
+• The sender’s account (the one derived from the private key) pays the transaction fee.
+• If you sign a vote transaction with your MetaMask private key, the fee is deducted from that account’s balance.
+
+No Notification in MetaMask:
+• If you’re manually signing transactions in your code (using the private key directly), MetaMask isn’t involved in the transaction process.
+• That’s why you might not see notifications in MetaMask for these transactions—they’re processed programmatically.
+
+

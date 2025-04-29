@@ -1,5 +1,8 @@
 1)
+This folder - codebase includes the backend setup with node connectivity, but does not include the "Mech It" folder & Firebase setup.
 
+
+2)
 vote_chain\backend\services\blockchain.js 
 5th line -->
 

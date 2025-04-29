@@ -1,0 +1,6 @@
+1)
+
+vote_chain\backend\services\blockchain.js 
+5th line -->
+
+const web3 = new Web3(new Web3.providers.HttpProvider("http://000.0.0.0:0000"));   // Replace with your Ethereum RPC endpoint (e.g., Ganache (Localhost)

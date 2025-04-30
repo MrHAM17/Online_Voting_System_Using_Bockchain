@@ -1,1 +1,44 @@
 
+1)
+This folder - codebase includes the backend setup with node connectivity, & include the "Mech It" folder & Firebase setup.
+
+
+2)	
+vote_chain_app\mech_it\android\app\google-services.json
+Replace with your actual file.
+
+
+3)	vote_chain_app\mech_it\lib\SERVICE\utils\app_constants.dart
+149th line -->
+
+static const String rpcUrl_string = "https://snowy-wandering-sponge.ethereum-sepolia.quiknode.pro/00000000000000000"; // Replace with your QuickNode URL
+
+
+4)	vote_chain_app\mech_it\lib\SERVICE\utils\app_constants.dart
+150th line -->
+
+static const String contractAddress_string = "0000000000000000000000000"; // Replace with your Deployed contract address
+
+
+5)	vote_chain_app\mech_it\lib\SERVICE\utils\app_constants.dart
+151st line -->
+
+static const String privateKey_string = "00000000000000000000000000000000000000000000"; // Replace with your Meta Mask Private key
+
+
+6)	vote_chain_app\mech_it\lib\SERVICE\utils\app_constants.dart
+152nd line -->
+
+static const String privateKey_2_string = "000000000000000000000000000000"; // Replace with your Meta Mask Private key
+
+
+7)	vote_chain_app\mech_it\lib\main.dart
+40th  to 45th line -->
+// Replace with your firebase project details...
+
+apiKey: '00000000000000000000',  // From your config
+authDomain: '00000000000',            // This should be retrieved from Firebase Console
+projectId: '00000000',
+storageBucket: '0000000000000',
+messagingSenderId: '000000000000',               // Should be available in your Firebase Console
+appId: '000000000000000000000000000000', // Should be available in your Firebase Console

@@ -1,4 +1,3 @@
-
 1)
 This folder - codebase includes the backend setup with node connectivity, & include the "Mech It" folder & Firebase setup.
 

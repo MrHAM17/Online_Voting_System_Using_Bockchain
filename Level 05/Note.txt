@@ -54,7 +54,3 @@ storageBucket: '000000000',
 messagingSenderId: '00000000000000',               // Should be available in your Firebase Console
 appId: '0000000000000000000000000000000', // Should be available in your Firebase Console
 
-
-
-
-

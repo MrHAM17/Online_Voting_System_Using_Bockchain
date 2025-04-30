@@ -1,1 +1,39 @@
 
+1)
+This folder - codebase includes the backend setup with node connectivity, & include the "Mech It" folder & Firebase setup.
+
+
+2)	
+vote_chain_app\mech_it\android\app\google-services.json
+Replace with your actual file.
+
+
+3)
+vote_chain\backend\services\blockchain.js 
+5th line -->
+
+const web3 = new Web3(new Web3.providers.HttpProvider("http://000.0.0.0:0000"));   // Replace with your Ethereum RPC endpoint (e.g., Ganache (Localhost)
+
+
+4)
+vote_chain\backend\services\blockchain_service.dart
+11th line -->
+
+final String _rpcUrl = "https://snowy-wandering-sponge.ethereum-sepolia.quiknode.pro/000000000000000"; // Replace with your QuickNode URL
+
+
+5)
+vote_chain\backend\services\blockchain_service.dart 
+18th line -->
+
+final String _contractAddress = "0x000000000000000000000000"; // Replace with your Deployed contract address
+
+
+6)
+vote_chain\backend\services\blockchain_service.dart
+80th line -->
+
+String privateKey = "<00000000000000000000000000000>"; // Replace with your key
+
+
+

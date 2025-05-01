@@ -63,9 +63,8 @@ appId: '000000000000000000000000000', // Should be available in your Firebase Co
 
 
 10)
-Best ppt to svg converter -
-https://image.online-convert.com/convert/pptx-to-svg
-
+Best ppt to svg converter - https://image.online-convert.com/convert/pptx-to-svg
+Best mp4 to gif converter - https://cloudconvert.com/
 
 11)
 Workflow -

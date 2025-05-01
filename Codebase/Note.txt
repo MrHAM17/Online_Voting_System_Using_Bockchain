@@ -7,43 +7,50 @@ vote_chain_app\mech_it\android\app\google-services.json
 Replace with your actual file.
 
 
-3)	vote_chain_app\mech_it\lib\SERVICE\utils\app_constants.dart
+3)	
+vote_chain_app\mech_it\lib\SERVICE\utils\app_constants.dart
 236th line -->
 
 static const String rpcUrl_string = 'https://snowy-wandering-sponge.ethereum-sepolia.quiknode.pro/000000'; // Replace with your QuickNode URL // will not change ***
 
 
-4)	vote_chain_app\mech_it\lib\SERVICE\utils\app_constants.dart
+4)	
+vote_chain_app\mech_it\lib\SERVICE\utils\app_constants.dart
 237th line -->
 
 // static const String rpcUrl_string = "https://sepolia.infura.io/000/00000000000"; // Replace with your Infura URL // will not change ***
 
 
-5)	vote_chain_app\mech_it\lib\SERVICE\utils\app_constants.dart
+5)	
+vote_chain_app\mech_it\lib\SERVICE\utils\app_constants.dart
 239th line -->
 
 // static const String contractAddress_string = "000000000000000000"; // Replace with your Deployed 1st contract address
 
 
-6)	vote_chain_app\mech_it\lib\SERVICE\utils\app_constants.dart
+6)	
+vote_chain_app\mech_it\lib\SERVICE\utils\app_constants.dart
 240th line -->
 
 static const String contractAddress_string = "0000000000000000000000";  // Replace with your Deployed 2nd contract address
 
 
-7)	vote_chain_app\mech_it\lib\SERVICE\utils\app_constants.dart
+7)	
+vote_chain_app\mech_it\lib\SERVICE\utils\app_constants.dart
 242nd line -->
 
 static const String privateKey_string = "000000000000000000000000000000"; // Replace with your Meta Mask Private key
 
 
-8)	vote_chain_app\mech_it\lib\SERVICE\utils\app_constants.dart
+8)	
+vote_chain_app\mech_it\lib\SERVICE\utils\app_constants.dart
 243rd line -->
 
 static const String privateKey_2_string = "00000000000000000000000000000000000000000000000000"; // Replace with your Meta Mask Private key
 
 
-9)	vote_chain_app\mech_it\lib\main.dart
+9)	
+vote_chain_app\mech_it\lib\main.dart
 43rd to 48th line -->
 // Replace with your firebase project details...
 
@@ -53,3 +60,8 @@ projectId: '000000000',
 storageBucket: '0000000000000',
 messagingSenderId: '0000000000000000',               // Should be available in your Firebase Console
 appId: '000000000000000000000000000', // Should be available in your Firebase Console
+
+
+10)
+Best ppt to svg converter -
+https://image.online-convert.com/convert/pptx-to-svg

@@ -65,3 +65,52 @@ appId: '000000000000000000000000000', // Should be available in your Firebase Co
 10)
 Best ppt to svg converter -
 https://image.online-convert.com/convert/pptx-to-svg
+
+
+11)
+Workflow -
+
+🔹 1. Project Lead
+ Appointed to manage roles, timelines, and resources from the beginning.
+
+🔹 2. Initial Research & Survey Paper
+ To study existing systems, analyze literature, and identify the problem space. (This is before solution design.)
+
+🔹 3. System Architect
+ Plans the overall structure of the system — technologies, modules, data flow.
+
+🔹 4. Project Documentation
+ Prepared early:
+   - SRS, RMMM,...
+   - Software Design (UML, DFD, ER,...)
+   - Use cases, user stories, tech stack decisions,...
+
+🔹 5. UI/UX Design
+ Initial screen mockups, user journey, visual guidelines.
+
+🔹 6. Smart Contract Design (Solidity)
+ Design blockchain voting logic, eligibility, verification, etc.
+
+🔹 7. Firebase/Database Design
+ Structuring Firestore collections/documents, indexing, security rules.
+
+🔹 8. Mobile App Development (Flutter)
+ Building frontend components and user interface screens.
+
+🔹 9. Backend Integration
+ Connecting the app to Firebase, Smart Contracts (via QuickNode/Infura), and APIs.
+
+🔹 10. Blockchain Developer
+ Handles smart contract deployment, testing, and frontend/backend integration securely.
+
+🔹 11. Project Report
+ Formal documentation of everything: implementation, testing, results, screenshots, etc.
+
+🔹 12. PPTs
+ Prepared for internal/external demos, presentations, and vivas.
+
+🔹 13. Research Paper
+ Written after the project is implemented and tested — includes your methodology, outcomes, and findings.
+
+
+
